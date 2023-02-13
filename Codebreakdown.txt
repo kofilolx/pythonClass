@@ -1,0 +1,12 @@
+The simulation is a numerical approach to solving the heat transfer equation for a solid with a given heat capacity. 
+The solid is placed in an environment with a temperature Te, and heat is transferred from the environment to the solid over time. 
+The rate of heat transfer is described by the equation dQ/dt = -k * A * (T - Te) / d, 
+where k is the thermal conductivity of the solid, A is its surface area, d is its thickness, and T is its temperature.
+
+The simulation runs from t=0 to tfinal with a time step dt, and the initial temperature is T0. For each iteration of the simulation, 
+the heat input dQ is calculated using dQ = -dQdt * dt, and the temperature of the solid is updated using T = T + dQdt * dt. 
+This allows us to track how the temperature of the solid changes over time as heat is transferred from the environment to the solid.
+
+Finally, by plotting the temperature of the solid versus the heat input, 
+the specific heat capacity Cp can be extracted from the slope of the plot, 
+giving us Cp = dQ/dT/V, where V is the volume of the solid.
